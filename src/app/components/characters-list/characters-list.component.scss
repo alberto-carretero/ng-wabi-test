@@ -1,0 +1,21 @@
+@import '../../../assets/scss/variables';
+
+.characters-list-container {
+  & table {
+    background-color: $wabi-test-white;
+  }
+  & tbody tr {
+    cursor: pointer;
+  }
+
+  &__pagination {
+    & .page-link {
+      color: $wabi-test-black;
+      cursor: pointer;
+    }
+
+    & .page-item.disabled .page-link {
+      opacity: 0.5;
+    }
+  }
+}

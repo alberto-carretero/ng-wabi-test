@@ -1,0 +1,18 @@
+<div *ngIf="!loading; else spinnerTmpl" class="details-container">
+  <div class="details-container__character">
+    <h1>{{ infoCharacter?.name }}</h1>
+  </div>
+  <div class="details-container__films">
+    <div *ngFor="let film of films" class="card col">
+      <img class="card-img-top" src="../../../assets/images/films/{{ film.episode_id }}.jpg" alt="{{ film.title }}" />
+      <div class="card-body">
+        <h5 class="card-title">{{ film.title }}</h5>
+      </div>
+    </div>
+  </div>
+  <button routerLink="/characters" class="btn btn-warning">Back</button>
+</div>
+
+<ng-template #spinnerTmpl>
+  <app-spinner></app-spinner>
+</ng-template>

@@ -1,0 +1,8 @@
+$common-assets-fonts-path: '..' !default;
+
+@font-face {
+  font-family: StarJedi;
+  src: url('#{$common-assets-fonts-path}/fonts/Starjedi.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

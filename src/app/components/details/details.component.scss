@@ -1,0 +1,31 @@
+@import '../../../assets/scss/variables';
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+
+  &__character {
+    margin-right: 10px;
+  }
+
+  &__films {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  & .card {
+    color: $wabi-test-black;
+    margin: 15px 5px 0;
+  }
+
+  & button.btn-warning {
+    background-color: $wabi-test-yellow;
+    border: none;
+    margin: 20px 10px 0 10px;
+  }
+}
